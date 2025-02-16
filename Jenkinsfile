@@ -6,7 +6,7 @@ pipeline {
                 print "Check Out"
                 checkout([
                     $class: 'GitSCM', 
-                    branches: [[name: '*/main'],
+                    branches: [[name: '*/main']],
                     userRemoteConfigs: [ [ 
                     credentialsId: 'Kongpop', 
                     url: 'https://github.com/KongpopUs/CSI402-Frontend-NextJS.git'
