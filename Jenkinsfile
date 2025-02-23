@@ -19,6 +19,9 @@ pipeline {
             steps {
                 print "Build Docker"
         }
+            steps {
+                sh "docker create --name <csi403-container> <csi402frontend>:latest"
+            }
         }
         stage('Test') {
             steps {
